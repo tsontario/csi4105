@@ -3,6 +3,9 @@ import networkx as nx
 import numpy as np
 from sklearn.cluster import KMeans
 
+# Attribution notice: code borrows heavily from the following site
+# https://towardsdatascience.com/spectral-clustering-aba2640c0d5b
+
 def find_num_clusters(eigenvalues):
   for i, val in enumerate(eigenvalues):
     if val > 0.1:
